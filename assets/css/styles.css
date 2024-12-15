@@ -1,0 +1,380 @@
+﻿*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --mainColor:white;
+    --textimportantColor:white;
+    --sky: rgb(5, 181, 250);
+    --red:red;
+
+}
+
+
+
+#Home{
+  
+    background-image: url(../img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#Home  div{
+    background-image: linear-gradient(rgba(0,0,0,0.40),rgba(0,0,0,0.40));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+   
+}
+
+
+#Home  div nav{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: black;
+}
+
+
+#Home div  nav h3{
+    color: var(--textimportantColor);
+    display: inline-block;
+    font-size: x-large;
+    padding: 8px 50px;
+    margin: 0;
+}
+
+
+#Home div  nav  ul {
+    float: right;
+    cursor: pointer;
+    list-style-type: none;
+    margin: 0;
+    padding: 8px 50px;
+}
+
+#Home div   nav  ul li {
+    display: inline-block;
+}
+
+#Home div   nav  ul li :hover{
+    color: var(--red);
+   
+}
+
+#Home div nav  ul li a {
+   
+    color: var(--textimportantColor);
+    padding: 8px 16px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+#Home div  h1{
+    color: var(--textimportantColor);
+    font-size: 50px;
+    margin-top: 150px ;
+}
+
+#Home div  h2{
+    color: var(--textimportantColor);
+    margin: 5px;
+}
+
+.button{
+    color: var(--textimportantColor);
+    background-color:var(--sky);
+    border-radius: 5px;
+    padding: 15px 25px;
+    margin: 20px;
+    border: 0;
+    font-size: small;
+    font-weight: bolder;
+    margin-bottom:  150px;
+   
+   
+    
+    
+}
+
+.button:hover {
+    background-color: black;
+    color: var(--mainColor);
+
+}
+
+@media screen and (max-width:720px) {
+
+ 
+    #Home div  nav h3{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    #Home div  nav  ul  {
+        display: block;
+        width: 100%;
+        text-align: center;
+
+    }
+
+    #Home div  h1 {
+        width: 250px;
+        text-align: center;
+    }
+
+    #Home div  .button{
+        width: 200px;
+    }
+
+}
+
+
+#Products{
+    background-color: var(--mainColor);
+    margin: 100px;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+   
+}
+
+
+.heading {
+    margin: 10px;
+    padding: 10px;
+   
+}
+
+.pragraph {
+    margin: 25px;
+    text-align: center;
+    line-height: 30px;
+
+}
+
+.hr{
+    width: 150px;
+    margin: 25px;
+    height: 3px;
+    background-color: var(--sky);
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+}
+
+
+#containerImg div img {
+    margin: 10px;
+}
+
+.groupImgOne {
+    height: 250px;
+    width: 250px;
+}
+
+.groupImgTwo {
+    height: 250px;
+    width: 500px;
+   
+}
+
+
+
+@media screen and (max-width:720px){
+    .heading { 
+        width: 100%;
+        font-size: 30px;
+    }
+
+
+    .pragraph {
+        line-height: 30px;
+      
+    }
+
+    .hr{
+        width: 120px;
+        margin-bottom: 50px;
+
+    }
+
+
+    #containerImg div{
+        display: flex;
+    }
+
+    .groupImgOne{
+        width: 50px;
+ 
+    }
+
+    .groupImgTwo {
+        width: 100px;
+       
+    }
+
+
+}
+
+
+.divAbout{
+    background-color: gainsboro;
+}
+
+
+.Allcards{
+    display: flex;
+    margin-bottom: 50px;
+   
+}
+
+
+
+.card{
+    margin: 25px;
+    text-align: center;
+}
+
+
+#contactDiv{
+
+    width: 100%;
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contactDiv input {
+
+    margin-bottom: 20px;
+
+}
+
+#contactDiv input[type = email]{
+    width: 400px;
+    margin: 20px;
+    padding: 15px 25px;
+    border: 1px black solid;
+    border-radius: 3px;
+}
+
+@media screen and (max-width:720px){
+
+    .pragraph{
+        width: 250px;
+        line-height: 30px;
+    }
+
+    .divAbout h2{
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+    }
+
+
+    .heading{
+        width: 100%;
+        
+    }
+    
+    .Allcards{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;  
+    }
+
+
+    .card{
+        margin: 25px;
+        text-align: center;
+        width: 250px;
+    }
+
+    .card  h3{
+        font-size: x-large;
+
+    }
+
+    .card  p{
+        line-height: 30px;
+    }
+
+    #contactDiv{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #contactDiv input[type="email"]{
+        width: 250px;
+       
+    }
+
+    #contactDiv input[type="submit"]{
+        width: 200px;
+       font-size: large;
+       padding: 15px 25px;
+       text-wrap: inherit;
+  
+       
+    }
+
+}
+
+ 
+.footer{
+    background-color: rgb(57, 57, 57);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer div {
+    margin:50px;
+}
+
+.footer div  p {
+    margin:5px;
+    color: rgb(188, 186, 186);
+    text-transform: uppercase;
+    font-size: small;
+}
+
+
+.footer div  span {
+    color: white;
+}
+
+@media screen and (max-width:720px) {
+    .footer{
+     text-align: center;
+     padding: 25px;
+    
+    }
+
+    .footer div{
+        margin:10px;
+        padding: 10px;
+    }
+
+    .footer div p {
+      margin: 15px 1px;
+    
+    }
+
+}
